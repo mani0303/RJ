@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Sci-Fi Card</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  background: #0a101d;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.neon-card {
+  width: 360px;
+  padding: 30px 20px;
+  border: 3px solid #00f0ff;
+  border-radius: 12px;
+ height: 435px;
+  box-shadow: 0 0 20px #00f0ff;
+  clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%);
+  color: #ff9000;
+  text-align: center;
+}
+
+.neon-header img {
+  width: 50px;
+  filter: drop-shadow(0 0 4px #00f0ff);
+}
+
+.neon-header h2 {
+  color: #ff6f00;
+  margin: 10px 0 25px;
+  font-size: 22px;
+}
+
+.neon-content {
+  text-align: left;
+}
+
+.neon-input {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #00f0ff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.neon-input img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.neon-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  color: #ff9000;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff9000;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.remember-me input {
+  accent-color: #00f0ff;
+}
+
+.neon-button {
+  width: 100%;
+  padding: 12px;
+  background: #00f0ff;
+  color: #001f2e;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 0 15px #00f0ff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.forgot {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ff6f00;
+  text-align: center;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div  style="Width: 408px; 
+Border-radius: 12px;  padding: 30px 20px; background:url('https://i.ibb.co/d0VCpb4H/IMG-8461.png')">
+<div class="neon-card">
+    <div class="neon-header">
+      <img src="https://img.icons8.com/ios-filled/50/00f0ff/user.png" alt="icon" />
+      <h2>LOGIN</h2>
+    </div>
+
+    <div class="neon-content">
+      <div class="neon-input">
+        <img src="https://img.icons8.com/ios-filled/20/ff9000/user.png" />
+        <input type="text" placeholder="Username" />
+      </div>
+
+      <div class="neon-input">
+        <img src="https://img.icons8.com/ios-filled/20/ff9000/lock--v1.png" />
+        <input type="password" placeholder="Password" />
+      </div>
+
+      <label class="remember-me">
+        <input type="checkbox" checked />
+        Remember me
+      </label>
+
+      <button class="neon-button">LOG IN</button>
+      <p class="forgot">Forgot password?</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
